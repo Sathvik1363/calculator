@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 70px auto;
+  width: 25%;
+  background-color: black;
+  height: 400px;
+  border-radius: 10px;
+  border: solid;
+}
+
+.main-container .input {
+  margin-top: 10px;
+  /* border: solid wheat; */
+  /* padding: 10px; */
+}
+.main-container input[type="text"] {
+  height: 50px;
+  width: 100%;
+  display: inline-block;
+  /* margin: 10px 40px; */
+  border: none;
+  background-color: black;
+  color: white;
+  text-align: right;
+  font-size: 30px;
+}
+.main-container input[type="text"]:focus{
+    outline: none;
+    caret-color: black;
+}
+.main-container .buttons {
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.buttons-values {
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttons-values button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+  background-color: rgb(24, 23, 23);
+  color: white;
+  font-size: 20px;
+}
+.buttons-values button:hover{
+    transform: scale(1.1);
+}
+.buttons-values .btn-num {
+  background-color: gray;
+}
+.buttons-values button:last-child {
+  background-color: orange;
+}
+.buttons-values:last-child button:first-child {
+  width: 100px;
+  border-radius: 40px;
+}
